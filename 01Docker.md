@@ -173,7 +173,7 @@ print(data2)
 
 #### 3.提高分数
 
-只得到了60分，尝试仿照满分答案，找到问题的所在
+只得到了60分，尝试仿照满分答案去找到问题的所在
 
 1. 修改代码，增加requirements.txt文件:
 
@@ -222,7 +222,9 @@ print(data2)
    RUN pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt
    ```
 
-   3.出现的问题，新添加的命令造成了包的下载，增加了镜像构建的时间
+   3.出现的问题，新添加的命令造成了包的下载，增加了镜像构建的时间。
+
+###### 总结：分数低的原因应该是python代码的写错的原因
 
 ---
 
