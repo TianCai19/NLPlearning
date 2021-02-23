@@ -113,3 +113,15 @@ UnicodeDecodeError: 'gbk' codec can't decode byte 0xaf in position 6: illegal mu
   > 提取码：1234 
 
 * [学习google 的python 怎么用](https://cloud.google.com/ai-platform/training/docs/using-gpus?hl=zh-cn)
+
+## 4.提交
+
+日期:2021-02-23 10:37:16排名: 无[查看日志](https://tianchi.aliyun.com/competition/examinelog/531865/723/443409/1286355?isTcc=true&scoreId=1577767)
+
+score:0.6172
+
+score_ocnli:0.7010
+
+score_tnews:0.6867
+
+score_ocemotion:0.4639
