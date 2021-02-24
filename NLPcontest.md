@@ -6,26 +6,28 @@ link of contest :[**全球人工智能技术创新大赛**热身赛二: 中文�
 
 ---
 
-## 学习资料
+## 1学习资料
 
 * [踩坑记录——记一次训练提交baseline全过程](https://blog.csdn.net/weixin_40807714/article/details/113856151)
 * [比赛全流程体验--datawhale](https://github.com/finlay-liu/tianchi-multi-task-nlp/blob/main/README.md#%E6%AF%94%E8%B5%9B%E5%85%A8%E6%B5%81%E7%A8%8B%E4%BD%93%E9%AA%8C)
+* [GPU租用（云使用教程）（me)](https://github.com/TianCai19/NLPlearning/blob/master/GPU%20%E7%A7%9F%E7%94%A8.md)
+* [使用Vscode远程开发()](https://github.com/TianCai19/NLPlearning/blob/master/VscodeRemote.md)
 
-## 疑问记录
-
----
-
-什么是PyTorch?:b站，官网？
-
-
-
-
-
-## 全流程体验
+## 2疑问记录
 
 ---
 
-### 下载Bert全权重
+~~什么是PyTorch?:b站，官网？~~
+
+
+
+
+
+## 3全流程体验
+
+---
+
+### 1下载Bert全权重
 
 * [**Hugging Face**](https://huggingface.co/)如何clone 仓库：powershell 到达文件夹输入`git clone https://huggingface.co/bert-base-chinese`
 
@@ -60,17 +62,19 @@ link of contest :[**全球人工智能技术创新大赛**热身赛二: 中文�
 
 * config.json vocab.txt pytorch_model.bin，把这三个文件放进tianchi-multi-task-nlp/bert_pretrain_model文件夹下。
 
-### 数据集下载
+### 2.数据集下载
 
-使用powershell 快速创建文件夹
+修改文件名放进指定文件家
 
-## 3分开训练集和验证集
+> 使用命令行来创建文件夹更为方便
 
-* 直接forker [比赛全流程体验--datawhale ](https://github.com/finlay-liu/tianchi-multi-task-nlp/blob/main/README.md#%E6%AF%94%E8%B5%9B%E5%85%A8%E6%B5%81%E7%A8%8B%E4%BD%93%E9%AA%8C)
+### 3分开训练集和验证集
+
+* 直接forker [比赛全流程体验--datawhale ](https://github.com/finlay-liu/tianchi-multi-task-nlp/blob/main/README.md#%E6%AF%94%E8%B5%9B%E5%85%A8%E6%B5%81%E7%A8%8B%E4%BD%93%E9%AA%8C)到自己的github仓库
 
 * 然后clone 到本地
 
-  > 如何取消本地仓库，删除.git 文件夹。
+  > 当在一个文件夹错误的创建了仓库，如何取消本地仓库：删除.git 文件夹。
   >
   > 如何在文件管理器中查看.git 文件夹，文件资源管理器“查看”-》“隐藏的项目”
 
@@ -84,7 +88,7 @@ link of contest :[**全球人工智能技术创新大赛**热身赛二: 中文�
 python ./generate_data.py
 ```
 
-问题：
+问题1：
 
 ```
 -------------------------------start-----------------------------------
@@ -98,6 +102,8 @@ UnicodeDecodeError: 'gbk' codec can't decode byte 0xaf in position 6: illegal mu
 
 所有的with open 都加上 encoding='utf-8'
 
+> 后来租用远程的云主机，环境为linux,发现可以直接运行
+
 问题2：本地没有GPU运行，学习云端的如何使用？
 
 * 看直播视频
@@ -105,6 +111,7 @@ UnicodeDecodeError: 'gbk' codec can't decode byte 0xaf in position 6: illegal mu
   > 天池竞赛docker快速复现：
   > 录播地址：https://www.bilibili.com/video/BV1jy4y1J7rp/
   > 视频材料链接：https://pan.baidu.com/s/1LWcYRa4cpz5AkDeTeebqvg 
+  >
   > 提取码：1234 
   > ------------------------------
   > 天池nlp预训练泛化挑战Baseline：
